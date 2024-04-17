@@ -1,11 +1,11 @@
 import React from 'react'
-import Sidebar from './Sidebar.js'
+import SidebarNavigation from './SidebarNavigations.js'
 import MainContainer from './MainContainer.js'
 
 const Body = () => {
   return (
     <div>
-        <Sidebar />
+        <SidebarNavigation />
         <MainContainer />
     </div>
   )
