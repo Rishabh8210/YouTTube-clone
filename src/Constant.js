@@ -110,3 +110,4 @@ export const SidebarNavData = {
     ]
 }
 
+export const TopbarNavData = ["App", "Gaming", "Live", "Battlegrounds Mobile India", "Web development", "Songs", "Data structures", "striver", "GTA 5", "Animation"]

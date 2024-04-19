@@ -1,11 +1,11 @@
 import React from 'react'
-import MenuButtom from './MenuButtom.js'
+import MainContainerButton from './MainContainerButton.js'
 import VideoList from './VideoList.js'
 
 const MainContainer = () => {
   return (
-    <div>
-        <MenuButtom />
+    <div className='w-fit flex flex-col '>
+        <MainContainerButton />
         <VideoList />
     </div>
   )

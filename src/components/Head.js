@@ -7,7 +7,7 @@ const Head = () => {
   return (
     <div className='ml-5 mr-5 h-fit flex items-center justify-between sticky'>
         <div className='h-16 w-40 flex items-center justify-between'>
-            <img alt='Menu' src={HamburgMenu} className='h-10 cursor-pointer'/>
+            <img alt='Menu' src={HamburgMenu} className='h-10 cursor-pointer hover:bg-gray-200 rounded-full'/>
             <img alt='YouTube' src={Logo} className='h-16 cursor-pointer'/>
         </div>
         <div className='h-12 w-2/5 items-center flex'>

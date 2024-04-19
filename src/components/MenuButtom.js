@@ -1,8 +1,8 @@
 import React from 'react'
 
-const MenuButtom = () => {
+const MenuButtom = ({prop}) => {
   return (
-    <div>MenuButtom</div>
+      <button className='bg-gray-200 h-10 px-5 py-0.5 rounded-lg text-base w-fit flex-shrink-0' >{prop}</button>
   )
 }
 

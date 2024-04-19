@@ -4,7 +4,7 @@ import MainContainer from './MainContainer.js'
 
 const Body = () => {
   return (
-    <div className='h-1/2'>
+    <div className='size-11/12 w-full flex overflow-hidden'>
         <SidebarNavigation />
         <MainContainer />
     </div>
