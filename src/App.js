@@ -4,7 +4,7 @@ import Head from './components/Head';
 
 function App() {
   return (
-    <div className="App">
+    <div className="h-screen">
         <Head />
         <Body />
     </div>
