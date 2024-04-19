@@ -4,4 +4,28 @@ export const SidebarNavData = [
         name:"Home",
         icon:Logo
     },
+    {
+        name:"Home",
+        icon:Logo
+    },
+    {
+        name:"Home",
+        icon:Logo
+    },
+    {
+        name:"Home",
+        icon:Logo
+    },
+    {
+        name:"Home",
+        icon:Logo
+    },
+    {
+        name:"Home",
+        icon:Logo
+    },
+    {
+        name:"Home",
+        icon:Logo
+    },
 ]
