@@ -7,7 +7,7 @@ const MainContainerButton = () => {
             {/* <button className='bg-gray-200 h-11 px-5 py-1 rounded-lg text-base w-fit flex-shrink-0' >All</button> */}
             {
                 TopbarNavData && TopbarNavData.map((data, ind) => {
-                    console.log(data)
+                    // console.log(data)
                     return <MenuButtom key={ind} prop = {data} />
                 })
             }
