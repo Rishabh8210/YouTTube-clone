@@ -4,7 +4,7 @@ import VideoList from './VideoList.js'
 
 const MainContainer = () => {
   return (
-    <div className='w-fit flex flex-col '>
+    <div className='w-full flex flex-col'>
         <MainContainerButton />
         <VideoList />
     </div>

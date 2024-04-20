@@ -1,10 +1,11 @@
 import React from 'react'
-import Home2 from '../assets/Home2.png'
 import { SidebarNavData } from '../Constant.js';
 import SidebarNavButtom from './SidebarNavButtom';
+
 const SidebarNavigation = () => {
-  return (
-    <div className='ml-5 mr-5 h-full w-52 flex-col overflow-auto'>
+
+return (
+  <div className='ml-5 mr-5 h-full w-52 flex-col flex-shrink-0 overflow-auto'>
       <div className='w-full flex flex-col gap-1'>
         {
           SidebarNavData?.functionality && SidebarNavData?.functionality.map((data, index) => {
