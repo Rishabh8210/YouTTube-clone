@@ -8,10 +8,16 @@ const VideoList = () => {
     getVideos();
   }, [])
   async function getVideos(){
-    const videoData = await fetch(Youtube_API);
-    const dataToJson = await videoData.json();
-    console.log(dataToJson)
-    setVideoList(dataToJson?.items);
+    try{
+      const videoData = await fetch(Youtube_API);
+      const dataToJson = await videoData.json();
+      console.log(dataToJson)
+      setVideoList(dataToJson?.items);
+    }
+    catch{
+      console.log("Network error")
+      return;
+    }
   }
   
   return (

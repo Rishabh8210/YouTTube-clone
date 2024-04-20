@@ -1,14 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Logo from '../assets/Logo.png'
 import HamburgMenu from '../assets/HamburgMenu.png'
 import SearchIcon from '../assets/Search.png'
-
+import SidebarContext from '../utils/SidebarContext'
 
 const Head = () => {
+    const {isSidebarOpen,setSidebarPosi} = useContext(SidebarContext)
+    const toggleSidebarNav = () => {
+        setSidebarPosi(!isSidebarOpen)
+    }
     return (
         <div className='ml-5 mr-5 h-fit flex items-center justify-between sticky'>
             <div className='h-16 w-40 flex items-center justify-between'>
                 <img alt='Menu' src={HamburgMenu} className='h-10 cursor-pointer hover:bg-gray-200 rounded-full' onClick={() => {
+                    toggleSidebarNav();
                 }} />
                 <img alt='YouTube' src={Logo} className='h-16 cursor-pointer' />
             </div>
