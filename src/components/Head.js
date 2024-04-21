@@ -23,7 +23,7 @@ const Head = () => {
                     <img alt='Search' src={SearchIcon} className='h-full ' />
                 </div>
             </div>
-            <div className='h-10 w-40 flex justify-center'>
+            <div className='h-10 w-40 flex justify-end'>
                 <div className='h-10 w-10 bg-black rounded-full'></div>
             </div>
         </div>

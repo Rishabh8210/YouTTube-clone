@@ -3,7 +3,6 @@ import {Youtube_API} from '../Constant.js'
 import VideoCard from './VideoCard'
 const VideoList = () => {
   const [videosList, setVideoList] = useState([])
-
   useEffect(()=>{
     getVideos();
   }, [])
@@ -21,7 +20,7 @@ const VideoList = () => {
   }
   
   return (
-    <div className='flex w-full justify-center flex-wrap gap-x-3 gap-y-10 overflow-auto'>
+    <div className='flex px-4 w-full flex-wrap gap-x-3 gap-y-10 overflow-auto'> 
         {
           videosList && videosList.map((videoData) => {
               return <VideoCard key={videoData?.id} prop = {videoData}/>
