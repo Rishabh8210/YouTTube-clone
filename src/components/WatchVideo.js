@@ -2,13 +2,14 @@ import React, {useContext, useEffect} from 'react'
 import SidebarContext from '../utils/SidebarContext'
 
 const WatchVideo = () => {
-  const {istransparent, setTransparentcy} = useContext(SidebarContext)
+  const {istransparent, setTransparentcy, isSidebarOpen, setSidebarPosi,} = useContext(SidebarContext)
   const checkTransparency = () => {
     setTransparentcy(!istransparent);
+    setSidebarPosi(!isSidebarOpen)
   }
   useEffect(() => {
     checkTransparency();
-    return checkTransparency()
+    
   },[])
   return (
     <div className='w-full h-full flex py-5 px-20 gap-8 justify-center'>
