@@ -1,4 +1,4 @@
-import React, { useCallback, useContext } from 'react'
+import React, { useContext } from 'react'
 import { SidebarNavData } from '../Constant.js';
 import SidebarNavButtom from './SidebarNavButtom';
 import SidebarContext from '../utils/SidebarContext.js';
@@ -8,7 +8,7 @@ const {isSidebarOpen} = useContext(SidebarContext)
 if(!isSidebarOpen)
   return;
 return (
-  <div className='ml-5 mr-5 h-full w-52 flex-col flex-shrink-0 overflow-auto'>
+  <div className='pl-5 pr-5 h-full w-60 flex-col flex-shrink-0 overflow-auto bg-white'>
       <div className='w-full flex flex-col gap-1'>
         {
           SidebarNavData?.functionality && SidebarNavData?.functionality.map((data, index) => {
