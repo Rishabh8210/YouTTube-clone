@@ -17,3 +17,4 @@ $ cd YouTube-clone
 $ npm install
 
 ```
+#### Create your own Google API before runnig the project
