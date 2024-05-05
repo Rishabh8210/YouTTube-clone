@@ -5,7 +5,15 @@ import SearchIcon from '../assets/Search.png'
 import SidebarContext from '../utils/SidebarContext'
 
 const Head = () => {
+    
+    function handleClick()
+    {
+        console.log("Debounsing");
+    }
+    
     const {isSidebarOpen,setSidebarPosi} = useContext(SidebarContext)
+
+
     const toggleSidebarNav = () => {
         setSidebarPosi(!isSidebarOpen)
     }
@@ -20,7 +28,7 @@ const Head = () => {
             <div className='h-12 w-2/5 items-center flex'>
                 <input type='text' placeholder='Search' className='h-10 border-2 border-opacity-50 border-black w-5/6 rounded-l-full p-4 text-lg' />
                 <div className='border-2 border-l-0 border-opacity-50 border-black h-10 rounded-r-full w-20 cursor-pointer flex justify-center bg-gray-200 hover:bg-gray-300'>
-                    <img alt='Search' src={SearchIcon} className='h-full ' />
+                    <img alt='Search' src={SearchIcon} className='h-full ' onClick={() => handleClick()}/>
                 </div>
             </div>
             <div className='h-10 w-40 flex justify-end'>
