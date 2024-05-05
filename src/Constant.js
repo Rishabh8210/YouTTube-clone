@@ -112,5 +112,5 @@ export const SidebarNavData = {
 
 export const TopbarNavData = ["App", "Gaming", "Live", "Battlegrounds Mobile India", "Web development", "Songs", "Data structures", "striver", "GTA 5", "Animation"]
 
-export const API_KEY = "AIzaSyDkgKjvpq_l3JtuKC57mg0O7AquvFFVKPA";
+export const API_KEY = "Generate your own API_KEY(Outh 2.0)";
 export const Youtube_API = "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=IN&key="+API_KEY;
